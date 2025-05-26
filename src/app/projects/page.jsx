@@ -10,7 +10,6 @@ export default async function ProjectsPage() {
       return { slug, ...data };
     })
   );
-  console.log(posts);
 
   return (
     <div className="max-w-6xl mx-auto p-6">

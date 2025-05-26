@@ -3,9 +3,9 @@ import { notFound } from "next/navigation";
 import { remark } from "remark";
 import html from "remark-html";
 
-export default async function PostPage({ params }) {
+export default async function ProjectPage({ params }) {
   const resolvedParams = await params;
-  const post = await getPostContent(resolvedParams.slug, "posts");
+  const post = await getPostContent(resolvedParams.slug, "projects");
   if (!post) return notFound();
 
   const processedContent = await remark().use(html).process(post.content);
