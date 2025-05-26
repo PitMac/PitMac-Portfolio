@@ -1,5 +1,5 @@
 import "./globals.css";
-import Navbar from "./components/Navbar";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
   title: "Jhon Pita | Portafolio",
@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className="bg-gray-100 text-gray-900">
-        <Navbar />
-        <main className="min-h-screen font-sans">{children}</main>
+        <Sidebar />
+        <main className="min-h-screen font-sans pt-12 md:pt-0">{children}</main>
       </body>
     </html>
   );
