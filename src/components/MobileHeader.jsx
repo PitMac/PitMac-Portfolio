@@ -22,7 +22,10 @@ export default function MobileHeader({ onMenuClick }) {
   const title = label ?? formattedSlug;
 
   return (
-    <header className="fixed top-0 left-0 right-0 h-12 bg-gray-900 flex items-center px-4 text-white z-50">
+    <header
+      style={{ backgroundColor: "#1e1e1d" }}
+      className="fixed top-0 left-0 right-0 h-14  flex items-center px-4  z-50"
+    >
       {isMainRoute ? (
         <button
           aria-label="Abrir menú"

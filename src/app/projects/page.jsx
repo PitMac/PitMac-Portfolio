@@ -12,7 +12,7 @@ export default async function ProjectsPage() {
   );
 
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="max-w-3xl mx-auto pt-8 px-8 md:px-0 pb-4">
       <h1 className="text-3xl font-bold mb-6">Proyectos</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

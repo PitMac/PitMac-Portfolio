@@ -51,8 +51,9 @@ export default function Sidebar() {
       <nav
         onMouseEnter={() => !isMobile && setIsExpanded(true)}
         onMouseLeave={() => !isMobile && setIsExpanded(false)}
+        style={{ backgroundColor: "#1e1e1d" }}
         className={`
-          fixed top-0 left-0 h-full bg-gray-900 text-white
+          fixed top-0 left-0 h-full text-white
           flex flex-col shadow-lg z-50
           rounded-tr-lg
           rounded-br-lg
